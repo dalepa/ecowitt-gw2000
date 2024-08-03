@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Path to your Python script
+PYTHON_SCRIPT="./toinflux.py"
+
+# Infinite loop
+while true; do
+    # Run the Python script
+    echo -n `date +%Y%m%d%H%M%S` " "
+
+    python3 "$PYTHON_SCRIPT"
+
+    # Wait for 20 seconds
+    sleep 20
+done
